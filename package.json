@@ -1,0 +1,26 @@
+{
+  "name": "finance-management",
+  "version": "0.0.1",
+  "description": "Finance Management platform\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[D\u001b[D\u001b\u001b[C\u001b[CP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mdhesari/Finance-Management.git"
+  },
+  "keywords": [
+    "finance"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mdhesari/Finance-Management/issues"
+  },
+  "homepage": "https://github.com/Mdhesari/Finance-Management#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
+}
