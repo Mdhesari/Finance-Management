@@ -139,7 +139,9 @@ ul li {
 section.sec {
     margin: 96px 0;
 }
-.introduction .des-us{}
+.introduction .des-us{
+    margin-top: 24px;
+}
 .introduction .des-us h1{
     font-size: 64px;
     text-shadow: 3px 2px #1945c2;
