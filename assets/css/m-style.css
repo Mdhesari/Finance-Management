@@ -1,0 +1,186 @@
+body{
+    background-color: #020e1c;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+/* .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+} */
+
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    
+    text-decoration: initial;
+    color: #fff;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nopadding {
+    padding: 0;
+}
+.margin-top-30{
+    margin-top: 30px;
+}
+/* Home-Page */
+/* Header */
+.top-header {
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+}
+
+.top-header .logo-holder {
+    position: relative;
+    float: left;
+    width: 50px;
+    margin: 2px 40px 2px 0;
+}
+
+.top-header .logo-holder img {
+    width: 100%;
+    height: auto;
+}
+
+.top-header .main-menu{
+    float: left;
+    margin: 12px 0px;
+}
+
+.top-header .main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+.top-header .main-menu ul li {
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.top-header .main-menu ul li a {
+    transition: all 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.top-header .main-menu ul > li:hover > a {
+    background-color: #1945c2;
+}
+.top-header .actions{
+    float: right;
+    margin: 12px 0px;
+}
+.top-header .actions .login{
+    padding: 10px 16px;
+    display: inline-block;
+    margin-right: 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all .3s;
+}
+.top-header .actions .sign-up{
+    display: inline-block;
+    padding: 10px 16px;
+    margin-right: 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all .3s;
+}
+.top-header .actions .sign-up.active{
+    background-color: #1945c2;
+}
+/* Header */
+/* Main */
+section.sec {
+    margin: 96px 0;
+}
+.introduction .des-us{
+    margin-top: 24px;
+}
+.introduction .des-us h1{
+    font-size: 64px;
+    text-shadow: 3px 2px #1945c2;
+}
+.introduction .des-us p{
+    font-size: 16px;
+    margin-top: 12px;
+    line-height: 32px;
+}
+.introduction .vector{
+    padding: 8px;
+    text-align: right;
+}
+.introduction .vector img{
+    width: 100%;
+}
+.btn-holder .start{   
+color: #fff ;  
+background: #1945c2;   
+border-radius: 30px;   
+outline: 0;    
+margin-top: 48px;
+}
+.finance .inner{
+    transition: 0.2s all;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1.5px solid #1945c2;
+    height: 180px;
+}
+.finance .inner .title{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.finance .inner .desc{
+    font-size: 14px;
+}
+/* Main */
+/* Home-Page */
