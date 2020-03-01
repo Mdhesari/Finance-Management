@@ -1,0 +1,22 @@
+﻿body {
+    background-color: #212429;
+    overflow-x:hidden;
+}
+h2 {
+    color: #f5f6f8;
+}
+.auto{
+    margin:auto;
+}
+.page-title{
+    padding:8px;
+}
+.chart{
+    padding:12px;
+}
+    .chart div {
+        background-color: #2a2d32;
+        height: 290px;
+        border-radius: 8px;
+        padding:8px;
+    }
