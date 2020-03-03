@@ -1,6 +1,7 @@
 ﻿body {
-    background-color: #212429;
-    overflow-x:hidden;
+    /*background-color: #212429;*/
+    background-color: #020e1c;
+    overflow-x: hidden;
 }
 h2 {
     color: #f5f6f8;
@@ -15,36 +16,37 @@ h2 {
     padding:12px;
 }
 .Chart-partition {
-    background-color: #2a2d32;
+    /*background-color: #17202d;*/
+    background-color: #151e2b;
     height: 290px;
     border-radius: 8px;
     padding: 8px;
 }
-    .Chart-partition div {
-        width:auto;
-        padding: 28px 1px;
-        height: auto;
-        text-align: center;
-      
-    }
-        .Chart-partition div div img{
-            display:block;
-            margin:4px auto;
-            width:22px;
-            height:auto;
-        }
-        @media(max-width:991px) and (min-width:767px) {
-            #DoughnutChart {
-        margin: auto;
-        width: auto !important;
-        height: 250px !important;
-    }
+.h-170 {
+    height:170px;
 }
-@media(max-width:575px) {
-    .Chart-partition {
-        height: auto;
-    }
+.h-110{
+     height:115px;
+     margin-top:5px ;
+} 
+.Chart-partition div {
+    width: auto;
+    padding:4px 1px;
+    height: auto;
+    text-align: center;
 }
+.balance{
+    width:80% !important;
+    text-align:left !important;
+    margin:auto;
+} 
+.Chart-partition div div img {
+    display: block;
+    margin: 4px auto;
+    width: 22px;
+    height: auto;
+}
+       
 .income-icon {
     width: 45px !important;
     height: 45px !important;
@@ -55,7 +57,7 @@ h2 {
     border: none !important;
     padding:8px !important;
 }
-.Expend-icon {
+.expense-icon {
     width: 45px !important;
     height: 45px !important;
     text-align: center;
@@ -64,6 +66,7 @@ h2 {
     display: inline-block;
     border: none !important;
     padding: 8px !important;
+    
 }
 .report-part {
         display: inline-block;
@@ -80,22 +83,23 @@ h2 {
         margin: 0px;
         font-size:18pt;
     }
-    .report-part p {
-        color: #abaeb3;
+    .report-part h5 {
+        color: white;
         text-align: left;
         margin: 0px;
-    }
+        font-size: 14pt;
+    } 
+    .report-part p {
+            color: #abaeb3;
+            text-align: left;
+            margin: 0px;
+        }
 .Chart-partition hr {
     width: 80%;
     height: 5px;
     margin: auto;
-    background-color: #404348;
-    border-radius:4px;
-}
-@media(max-width:991px){
-    .Chart-partition:last-child{
-        height:auto;
-    }
+    background-color: #020e1c;
+    border-radius: 4px;
 }
 
 /*section Reports*/
@@ -107,20 +111,20 @@ h2 {
     .filter-reports li {
         display: inline-block;
         padding: 8px 12px;
-        border: 0.8px solid #2a2d32;
-        border-radius:16px;
+        border: 0.8px solid #151e2b;
+        border-radius: 16px;
         cursor: pointer;
-        margin:2px;
+        margin: 2px;
     }
 .filter-reports li a{
     color:white !important;
 }
 
-    .filter-reports li:hover{
-          background-color:#2a2d32;
-    }
+        .filter-reports li:hover {
+            background-color: #151e2b;
+        }
 .filter-active {
-    background-color: #2a2d32;
+    background-color: #151e2b;
 }
 .Date {
     display:none;
@@ -133,18 +137,21 @@ h2 {
 .Date-submit{
     width:auto;
 }
+.Date i{
+    color:#abaeb3;
+}
 .finance-reports {
-    background-color: #303338;
-    height:auto;
-    border-radius:8px;
-    padding:8px;
+    background-color: #151e2b;
+    height: auto;
+    border-radius: 8px;
+    padding: 8px;
 }
     .finance-reports hr {
         width: 17%;
         height: 5px;
-        background-color: #2a2d32;
+        background-color: #020e1c;
         margin: auto;
-        border-radius:8px;
+        border-radius: 8px;
     }
 .title-report {
  
@@ -152,13 +159,13 @@ h2 {
     margin: 4px auto;
     padding: 8px 16px;
 }
-.Expend-border {
+.expense-border {
     border-left: 4px solid #d84c3b;
 }
 .income-border {
     border-left: 4px solid rgba(75, 192, 192, 1.00);
 }
-.title-report h3{
+.title-report h3,h5{
     color:white;
     text-align:left;
     margin:0px;
@@ -192,28 +199,74 @@ h2 {
         /*background-color: #c38dff;*/
         border: 0.5px solid #c086fe;
         cursor: pointer;
+        
     }
         .finance-reports div:last-child div i {
             margin: 1px 2px 1px 1px;
             color: #c38dff;
         }
-        .finance-reports div:last-child div:hover {
-            background-color: #c086fe;
-        }
+            .finance-reports div:last-child div h4{
+
+
+            } .finance-reports div:last-child div:hover {
+                background-color: #c086fe;
+            }
             .finance-reports div:last-child div:hover i {
                 color: #18032e;
             }
-.mobile-m div{
-    margin:auto;
+
+
+.mobile-m div {
+    margin: auto;
 }
-@media(max-width:575px){
-    .filter-reports{
-        margin:auto;
+.isntpay {
+    color: #abaeb3;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+}
+#progressbar{
+    border:none;
+    background-color:#020e1c;
+    width:90%;
+    margin:auto;
+    height:10px;
+    padding:0px;
+}
+    #progressbar div {
+        background-color: rgba(54, 162, 235, 0.89);
+        border:none;
     }
-    .page-title{
-        text-align:center;
+    /*Mobile Responsive*/
+    @media(max-width:991px) and (min-width:767px) {
+        #DoughnutChart {
+        margin: auto;
+        width: auto !important;
+        height: 250px !important;
     }
-    .chart:last-child{
-        display:none;
+}
+
+@media(max-width:575px) {
+    .Chart-partition {
+        height: auto ;
+    }
+}
+@media(max-width:575px) {
+    .filter-reports {
+        margin: auto;
+        text-align: center;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .chart:last-child {
+        display: none;
+    }
+}
+@media(max-width:991px) {
+    .chart:last-child div{
+        height: auto;
     }
 }
