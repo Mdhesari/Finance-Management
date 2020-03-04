@@ -94,14 +94,14 @@ h2 {
             text-align: left;
             margin: 0px;
         }
-.Chart-partition hr {
-    width: 80%;
-    height: 5px;
+
+.line {
+    width: 75% !important;
+    height: 1px !important;
     margin: auto;
     background-color: #020e1c;
     border-radius: 4px;
 }
-
 /*section Reports*/
 .filter-reports{
     list-style:none;
@@ -112,7 +112,7 @@ h2 {
         display: inline-block;
         padding: 8px 12px;
         border: 0.8px solid #151e2b;
-        border-radius: 16px;
+        border-radius: 30px;
         cursor: pointer;
         margin: 2px;
     }
@@ -143,22 +143,23 @@ h2 {
 .finance-reports {
     background-color: #151e2b;
     height: auto;
+    border-radius: 24px;
+    padding: 16px;
+}
+   
+
+.pins {
+    width: 16%;
+    height: 6px;
+    background-color: #020e1c;
+    margin: auto;
     border-radius: 8px;
-    padding: 8px;
 }
-    .finance-reports hr {
-        width: 17%;
-        height: 5px;
-        background-color: #020e1c;
-        margin: auto;
-        border-radius: 8px;
+    .title-report {
+        height: auto;
+        margin: 4px auto;
+        padding: 8px 16px;
     }
-.title-report {
- 
-    height:auto;
-    margin: 4px auto;
-    padding: 8px 16px;
-}
 .expense-border {
     border-left: 4px solid #d84c3b;
 }
@@ -199,10 +200,10 @@ h2 {
         /*background-color: #c38dff;*/
         border: 0.5px solid #c086fe;
         cursor: pointer;
-        
+        text-align:center;
+        padding-top:8px;
     }
         .finance-reports div:last-child div i {
-            margin: 1px 2px 1px 1px;
             color: #c38dff;
         }
             .finance-reports div:last-child div h4{
@@ -237,9 +238,28 @@ h2 {
         background-color: rgba(54, 162, 235, 0.89);
         border:none;
     }
-    /*Mobile Responsive*/
-    @media(max-width:991px) and (min-width:767px) {
-        #DoughnutChart {
+/*Menu-Finance*/
+.profile-btn {
+    float: right;
+    margin: 12px 0px;
+}
+    .profile-btn div {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #151e2b;
+        cursor: pointer;
+        text-align:center;
+        padding-top:7px;
+        display:inline-block;
+    }
+        .profile-btn div i {
+            
+            color: #abaeb3;
+        }
+/*Mobile Responsive*/
+@media(max-width:991px) and (min-width:767px) {
+    #DoughnutChart {
         margin: auto;
         width: auto !important;
         height: 250px !important;
@@ -249,6 +269,12 @@ h2 {
 @media(max-width:575px) {
     .Chart-partition {
         height: auto ;
+    }
+    .chart{
+        padding:4px;
+    }
+    .h-110{
+        margin-top:8px;
     }
 }
 @media(max-width:575px) {
@@ -264,9 +290,76 @@ h2 {
     .chart:last-child {
         display: none;
     }
+    #Finance-menu{
+        margin-top:0px;
+        background-color:#151e2b;
+        bottom:0px ;
+        top:unset;
+        height:50px;
+        position:fixed;
+    }
+    #Finance-menu .logo-holder{
+        display:none;
+    }
+    #Finance-menu .main-menu {
+        display: none;
+    }
+    #Finance-menu .profile-btn {
+        display: none;
+    }
+    .nav-bottem 
+    {
+        text-align:center;
+        position:relative;
+    }
+        .nav-bottem div {
+            width: 20%;
+            height: auto;
+            text-align: center;
+            padding-top: 8px;
+            position: relative;
+            margin:auto;
+            padding:8px;
+            /*border:1px solid blue;*/
+        }
+    .nav-bottem div i{
+        color:#abaeb3;
+        display:contents;
+    }
+    .diamond {
+        width: 50px !important;
+        height: 50px !important;
+        background-color: #151e2b;
+        transform: rotate(45deg);
+        /*position:absolute !important;*/
+        /*bottom:18px ;*/
+        border-radius:4px;
+        margin-top:-58px !important;
+        /*border-bottom:10px solid #020e1c;
+        border-right:10px solid #020e1c;*/
+        box-shadow:5px 5px 1px #020e1c;
+       
+    }
+        .diamond p {
+          
+            color: #abaeb3;
+            transform: rotate(46deg) !important;
+        }
+        .diamond:hover {
+            box-shadow: 6px 6px 4px #020e1c;
+            cursor:pointer;
+        }
 }
+
 @media(max-width:991px) {
     .chart:last-child div{
         height: auto;
+        
+    }
+    
+}
+@media(min-width:575px){
+    .nav-bottem{
+        display:none;
     }
 }
