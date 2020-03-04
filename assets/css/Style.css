@@ -133,6 +133,8 @@ h2 {
         border: none;
         border-radius: 8px;
         margin: 2px 8px;
+        width:auto !important;
+        padding:4px;
     }
 .Date-submit{
     width:auto;
@@ -311,6 +313,7 @@ h2 {
     {
         text-align:center;
         position:relative;
+        padding-top:4px;
     }
         .nav-bottem div {
             width: 20%;
@@ -325,16 +328,17 @@ h2 {
     .nav-bottem div i{
         color:#abaeb3;
         display:contents;
+        font-size:18pt;
     }
     .diamond {
         width: 50px !important;
         height: 50px !important;
-        background-color: #151e2b;
+        background-color: #abaeb3;
         transform: rotate(45deg);
         /*position:absolute !important;*/
         /*bottom:18px ;*/
         border-radius:4px;
-        margin-top:-58px !important;
+        margin-top:-60px !important;
         /*border-bottom:10px solid #020e1c;
         border-right:10px solid #020e1c;*/
         box-shadow:5px 5px 1px #020e1c;
@@ -342,12 +346,16 @@ h2 {
     }
         .diamond p {
           
-            color: #abaeb3;
+            margin:2px auto;
             transform: rotate(46deg) !important;
         }
         .diamond:hover {
             box-shadow: 6px 6px 4px #020e1c;
             cursor:pointer;
+        }
+        .diamond p i {
+            font-size: 22pt;
+            color: #151e2b;
         }
 }
 
