@@ -262,20 +262,42 @@ h2 {
 
 /*End Reports box*/
 /*End section Reports*/
-.mobile-m div {
+/*.mobile-m div {
     margin: auto;
-}
+}*/
 .isntpay {
     color: #abaeb3;
     position: absolute;
     right: 24px;
     top: 16px;
 }
+/*Start profile-section*/
+.profile-section {
+    background-color: #16273b;
+    height:auto;
+    border-radius:24px;
+    padding:24px;
+}
+.profile-pic{
+    padding:8px;
 
-
-/*Mobile Responsive Finance*/
-@media(max-width:991px) and (min-width:767px) {
-    #DoughnutChart {
+}
+    .profile-pic div{
+        width:100px;
+        height:100px;
+        border-radius:50px;
+        margin:12px auto;
+        text-align:center;
+    }
+        .profile-pic div img{
+            width:100%;
+            height:auto;
+            border-radius:50px;
+        }
+        /*End profile-section*/
+        /*Mobile Responsive Finance*/
+        @media(max-width:991px) and (min-width:767px) {
+            #DoughnutChart {
         margin: auto;
         width: auto !important;
         height: 250px !important;
