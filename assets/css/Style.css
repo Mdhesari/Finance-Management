@@ -97,10 +97,11 @@ h2 {
 
 .line {
     width: 75% !important;
-    height: 1px !important;
+    height: 5px !important;
     margin: auto;
     background-color: #020e1c;
     border-radius: 4px;
+    padding:0px !important;
 }
 /*section Reports*/
 .filter-reports{
@@ -152,7 +153,7 @@ h2 {
 
 .pins {
     width: 16%;
-    height: 6px;
+    height:4px;
     background-color: #020e1c;
     margin: auto;
     border-radius: 8px;
@@ -331,14 +332,14 @@ h2 {
         font-size:18pt;
     }
     .diamond {
-        width: 50px !important;
-        height: 50px !important;
+        width: 45px !important;
+        height: 45px !important;
         background-color: #abaeb3;
         transform: rotate(45deg);
         /*position:absolute !important;*/
         /*bottom:18px ;*/
         border-radius:4px;
-        margin-top:-60px !important;
+        margin-top:-57px !important;
         /*border-bottom:10px solid #020e1c;
         border-right:10px solid #020e1c;*/
         box-shadow:5px 5px 1px #020e1c;
@@ -346,7 +347,7 @@ h2 {
     }
         .diamond p {
           
-            margin:2px auto;
+            margin: auto;
             transform: rotate(46deg) !important;
         }
         .diamond:hover {
