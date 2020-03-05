@@ -477,6 +477,8 @@ section.sec {
     border: 0;
     outline: 0;
     border-radius: 8px;
+    background-color: #16273b;
+    color: #fff;
 }
 .form-input input::placeholder{
     color: #2a4b72;
@@ -497,7 +499,9 @@ section.sec {
     border: 0;
     outline: 0;
     padding: 8px;
-    height: 140px;
+    height: 110px;
+    background-color: #16273b;
+    color: #fff;
 }
 .custom-select {
     background-color: #16273b;
@@ -511,9 +515,36 @@ section.sec {
     height: 42px;
 }
 .add-finace-section{
-    padding: 140px 0 !important ;
+    padding: 150px 0 !important;
 }
-
+.btn-peyment{
+    background-color: #16273b;
+    color: #fff;
+    padding: 8px 32px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+.btn-peyment:hover{
+    color: #fff;
+}
+.income-btn.active{
+    background-color: #2ecc71;
+}
+.expense-btn.active{
+    background-color:#D24D57;
+}
+.row-form-button {
+    /* text-align: right; */
+}
+.row-form-button .btn-submit{
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 8px 32px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    margin-left: 16px;
+}
 /* Add Finance */
 /*START Queries*/
 @media (max-width: 768px) {
