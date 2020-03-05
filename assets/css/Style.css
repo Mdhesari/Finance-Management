@@ -1,4 +1,5 @@
-﻿body {
+﻿/*Start page css*/
+body {
     /*background-color: #212429;*/
     background-color: #020e1c;
     overflow-x: hidden;
@@ -12,6 +13,29 @@ h2 {
 .page-title{
     padding:8px;
 }
+/*End page css*/
+/*Start Menu-Finance*/
+.profile-btn {
+    float: right;
+    margin: 12px 0px;
+}
+
+    .profile-btn div {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #151e2b;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 7px;
+        display: inline-block;
+    }
+
+        .profile-btn div i {
+            color: #abaeb3;
+        }
+/*End Menu-Finance*/
+/*Start Chart section css*/
 .chart{
     padding:12px;
 }
@@ -74,6 +98,19 @@ h2 {
         height: auto !important;
         margin: auto;
     }
+#progressbar {
+    border: none;
+    background-color: #020e1c;
+    width: 90%;
+    margin: auto;
+    height: 10px;
+    padding: 0px;
+}
+
+    #progressbar div {
+        background-color: rgba(54, 162, 235, 0.89);
+        border: none;
+    }
 /*.Chart-partition div:first-child {
     border-bottom: 4px solid #404348;
 }*/
@@ -103,7 +140,9 @@ h2 {
     border-radius: 4px;
     padding:0px !important;
 }
-/*section Reports*/
+/*End Chart section css*/
+/*Start section Reports*/
+/*Start filter*/
 .filter-reports{
     list-style:none;
     padding:1px;
@@ -143,6 +182,8 @@ h2 {
 .Date i{
     color:#abaeb3;
 }
+/*End filter*/
+/*Start Reports box*/
 .finance-reports {
     background-color: #151e2b;
     height: auto;
@@ -219,7 +260,8 @@ h2 {
                 color: #18032e;
             }
 
-
+/*End Reports box*/
+/*End section Reports*/
 .mobile-m div {
     margin: auto;
 }
@@ -229,38 +271,9 @@ h2 {
     right: 24px;
     top: 16px;
 }
-#progressbar{
-    border:none;
-    background-color:#020e1c;
-    width:90%;
-    margin:auto;
-    height:10px;
-    padding:0px;
-}
-    #progressbar div {
-        background-color: rgba(54, 162, 235, 0.89);
-        border:none;
-    }
-/*Menu-Finance*/
-.profile-btn {
-    float: right;
-    margin: 12px 0px;
-}
-    .profile-btn div {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        background-color: #151e2b;
-        cursor: pointer;
-        text-align:center;
-        padding-top:7px;
-        display:inline-block;
-    }
-        .profile-btn div i {
-            
-            color: #abaeb3;
-        }
-/*Mobile Responsive*/
+
+
+/*Mobile Responsive Finance*/
 @media(max-width:991px) and (min-width:767px) {
     #DoughnutChart {
         margin: auto;
@@ -304,18 +317,21 @@ h2 {
     #Finance-menu .logo-holder{
         display:none;
     }
-    #Finance-menu .main-menu {
+    #Finance-menu .main-menu ul{
         display: none;
     }
     #Finance-menu .profile-btn {
         display: none;
     }
-    .nav-bottem 
-    {
-        text-align:center;
-        position:relative;
-        padding-top:4px;
-    }
+        #Finance-menu .main-menu{
+            float:none;
+            margin:auto;
+        }
+        .nav-bottem {
+            text-align: center;
+            position: relative;
+            padding-top: 4px;
+        }
         .nav-bottem div {
             width: 20%;
             height: auto;
