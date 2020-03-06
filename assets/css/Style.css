@@ -13,6 +13,7 @@ h2 {
 .page-title{
     padding:8px;
 }
+
 /*End page css*/
 /*Start Menu-Finance*/
 .profile-btn {
@@ -273,7 +274,7 @@ h2 {
 }
 /*Start profile-section*/
 .profile-section {
-    background-color: #16273b;
+    /*background-color: #16273b;*/
     height:auto;
     border-radius:24px;
     padding:24px;
@@ -282,22 +283,43 @@ h2 {
     padding:8px;
 
 }
-    .profile-pic div{
+    .profile-pic div {
         width:100px;
         height:100px;
         border-radius:50px;
         margin:12px auto;
         text-align:center;
     }
-        .profile-pic div img{
-            width:100%;
-            height:auto;
-            border-radius:50px;
+        .profile-pic div input {
+            position: absolute;
+            top: 20px;
+            height: 100px;
+            width: 100px;
+            cursor:pointer;
+        } 
+        .profile-pic div img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
         }
-        /*End profile-section*/
-        /*Mobile Responsive Finance*/
-        @media(max-width:991px) and (min-width:767px) {
-            #DoughnutChart {
+            .profile-pic div:hover img{
+                opacity:0.2;
+            }
+       
+        .profile-pic div i {
+            color: #abaeb3;
+            font-size: 22pt;
+            margin-top: -62px;
+            opacity:1 !important;
+            display: none;
+        }
+.profile-pic div:hover i{
+    display:block;
+}
+/*End profile-section*/
+/*Mobile Responsive Finance*/
+@media(max-width:991px) and (min-width:767px) {
+    #DoughnutChart {
         margin: auto;
         width: auto !important;
         height: 250px !important;

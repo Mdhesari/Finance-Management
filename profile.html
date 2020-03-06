@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Finance page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,116 +16,135 @@
     />-->
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <link rel="stylesheet" href="assets/css/m-style.css" />
-    <script src="https://kit.fontawesome.com/de1219be64.js"
-            crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/de1219be64.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header id="Finance-menu" class="top-header">
-        <div class="container">
-            <div class="logo-holder">
-                <a href="#">
-                    <img src="assets/img/logo.png" alt="" />
-                </a>
-            </div>
-            <nav class="main-menu" id="main-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-                <div class="row nav-bottem">
-                    <div><i class="fas fa-home fa-2x"></i></div>
-                    <div><i class="fas fa-bell"></i></div>
-                    <div>
-                        <div class="diamond">
-                            <p>
-                                <i class="fas fa-plus fa-2x"></i>
-                            </p>
-                        </div>
-                    </div>
-                    <div><i class="fas fa-question"></i></div>
-                    <div><i class="fas fa-user-alt fa-2x"></i></div>
-                </div>
-            </nav>
-            <div class="profile-btn">
-                <div>
-                    <i class="fas fa-user-alt"></i>
-                </div>
-                <div>
-                    <i class="fas fa-sign-out-alt"></i>
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="logo-holder">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
         </div>
+        <nav class="main-menu" id="main-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <div class="row nav-bottem">
+            <div><i class="fas fa-home fa-2x"></i></div>
+            <div><i class="fas fa-bell"></i></div>
+            <div>
+              <div class="diamond">
+                <p>
+                  <i class="fas fa-plus fa-2x"></i>
+                </p>
+              </div>
+            </div>
+            <div><i class="fas fa-question"></i></div>
+            <div><i class="fas fa-user-alt fa-2x"></i></div>
+          </div>
+        </nav>
+        <div class="profile-btn">
+          <div>
+            <i class="fas fa-user-alt"></i>
+          </div>
+          <div>
+            <i class="fas fa-sign-out-alt"></i>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="mt-5">
-            <div class="container">
-
-                <div class="row profile-section">
-                    <div class="col-lg-2 col-12   profile-pic ">
-                        <div>
-                            <img src="assets/img/profile.png"/>
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        <form action="" class="form-holder">
-                            <div class="row row-form-holder">
-                                <div class="col-lg-5 col-md-12 form-inpus">
-                                    <div class="form-input col-md-12">
-                                        <div class="input-title">
-                                            <span>Name</span>
-                                        </div>
-                                        <input type="text" class="finance-input">
-                                    </div>
-                                    <div class="form-input col-md-12">
-                                        <div class="input-title">
-                                            <span>Amount</span>
-                                        </div>
-                                        <input type="number" class="finance-input">
-                                    </div>
-                                    <div class="payments">
-                                        <div class="form-input d-inline-block width-49 col-md-6">
-                                            <div class="input-title">
-                                                <span>Income</span>
-                                            </div>
-                                            <input type="number" class="finance-input">
-                                        </div>
-                                        <div class="form-input d-inline-block width-49 col-md-6">
-                                            <div class="input-title">
-                                                <span>Expense</span>
-                                            </div>
-                                            <input type="number" class="finance-input">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-4 .col-md-12 form-inputs">
-                                    <div class="form-input col-md-12">
-                                        <div class="input-title">
-                                            <span>Category</span>
-                                        </div>
-                                        <select class="browser-default custom-select">
-                                            <option value="1">Personal</option>
-                                            <option value="2">Work</option>
-                                            <option value="3">Home</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-input col-md-12">
-                                        <div class="input-title">
-                                            <span>Description</span>
-                                        </div>
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 .col-md-12 form-inputs">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                   
-                </div>
+      <section class="mt-5">
+        <div class="container">
+          <div class="row profile-section">
+            <div class="col-lg-3 col-12  profile-pic ">
+              <div>
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="customFile"
+                  accept="image/*"
+                  value=""
+                />
+                <img src="assets/img/profile.png" />
+                <i class="fas fa-plus fa-2x "></i>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-9">
+              <form action="" class="form-holder">
+                <div class="row row-form-holder">
+                  <div class="col-lg-5 col-md-12 form-inpus ">
+                    <div class="form-input col-md-12">
+                      <div class="input-title">
+                        <span>Name</span>
+                      </div>
+                      <input
+                        type="text"
+                        class="finance-input"
+                        data-rule="minlen:4"
+                        data-msg="Please enter at least 4 chars"
+                      />
+                    </div>
+                    <div class="form-input col-md-12">
+                      <div class="input-title">
+                        <span>Email</span>
+                      </div>
+                      <input
+                        type="email"
+                        class="finance-input"
+                        data-rule="email"
+                        data-msg="Please enter a valid email"
+                      />
+                    </div>
+                    <div class="form-input col-md-12">
+                      <div class="input-title">
+                        <span>Change Password</span>
+                      </div>
+                      <input type="password" class="finance-input" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 .col-md-12 form-inputs ">
+                    <div class="form-input col-md-12">
+                      <div class="input-title">
+                        <span>Phone number</span>
+                      </div>
+                      <input type="tel" class="finance-input" />
+                    </div>
+                    <div class="form-input col-md-12">
+                      <div class="input-title">
+                        <span>select currency</span>
+                      </div>
+                      <select class="browser-default custom-select">
+                        <option value="1">تومان</option>
+                        <option value="2">ریال</option>
+                        <option value="3">$</option>
+                      </select>
+                    </div>
+                    <div class="form-input col-md-12">
+                      <div class="input-title">
+                        <span>language</span>
+                      </div>
+                      <select class="browser-default custom-select">
+                        <option value="1">English</option>
+                        <option value="2">Persian</option>
+                        <option value="3">United states</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-form-holder row-form-button">
+                  <button class="btn btn-submit" type="submit">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
