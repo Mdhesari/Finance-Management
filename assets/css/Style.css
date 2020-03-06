@@ -1,11 +1,19 @@
-﻿/*Start page css*/
+﻿:root {
+    --main-color: #020e1c;
+    --titles: #f5f6f8;
+    --bg-items-color: #151e2b;
+    --gray: #abaeb3;
+}
+/*Start page css*/
 body {
+   
     /*background-color: #212429;*/
-    background-color: #020e1c;
+    background-color: var(--main-color);
     overflow-x: hidden;
 }
 h2 {
-    color: #f5f6f8;
+    /*color: #f5f6f8;*/
+    color:var(--titles);
 }
 .auto{
     margin:auto;
@@ -25,7 +33,7 @@ h2 {
         width: 40px;
         height: 40px;
         border-radius: 20px;
-        background-color: #151e2b;
+        background-color: var(--bg-items-color);
         cursor: pointer;
         text-align: center;
         padding-top: 7px;
@@ -33,7 +41,7 @@ h2 {
     }
 
         .profile-btn div i {
-            color: #abaeb3;
+            color:var(--gray) ;
         }
 /*End Menu-Finance*/
 /*Start Chart section css*/
@@ -42,7 +50,7 @@ h2 {
 }
 .Chart-partition {
     /*background-color: #17202d;*/
-    background-color: #151e2b;
+    background-color: var(--bg-items-color);
     height: 290px;
     border-radius: 8px;
     padding: 8px;
@@ -101,7 +109,7 @@ h2 {
     }
 #progressbar {
     border: none;
-    background-color: #020e1c;
+    background-color:var(--main-color);
     width: 90%;
     margin: auto;
     height: 10px;
@@ -116,19 +124,19 @@ h2 {
     border-bottom: 4px solid #404348;
 }*/
     .report-part h3 {
-        color: white;
+        color: var(--titles);
         text-align: left;
         margin: 0px;
         font-size:18pt;
     }
     .report-part h5 {
-        color: white;
+        color: var(--titles);
         text-align: left;
         margin: 0px;
         font-size: 14pt;
     } 
     .report-part p {
-            color: #abaeb3;
+            color: var(--gray);
             text-align: left;
             margin: 0px;
         }
@@ -137,7 +145,7 @@ h2 {
     width: 75% !important;
     height: 5px !important;
     margin: auto;
-    background-color: #020e1c;
+    background-color: var(--main-color);
     border-radius: 4px;
     padding:0px !important;
 }
@@ -152,20 +160,20 @@ h2 {
     .filter-reports li {
         display: inline-block;
         padding: 8px 12px;
-        border: 0.8px solid #151e2b;
+        border: 0.8px solid var(--bg-items-color);
         border-radius: 30px;
         cursor: pointer;
         margin: 2px;
     }
 .filter-reports li a{
-    color:white !important;
+    color:var(--titles) !important;
 }
 
         .filter-reports li:hover {
-            background-color: #151e2b;
+            background-color: var(--bg-items-color);
         }
 .filter-active {
-    background-color: #151e2b;
+    background-color: var(--bg-items-color);
 }
 .Date {
     display:none;
@@ -181,12 +189,12 @@ h2 {
     width:auto;
 }
 .Date i{
-    color:#abaeb3;
+    color:var(--gray);
 }
 /*End filter*/
 /*Start Reports box*/
 .finance-reports {
-    background-color: #151e2b;
+    background-color: var(--bg-items-color);
     height: auto;
     border-radius: 24px;
     padding: 16px;
@@ -196,7 +204,7 @@ h2 {
 .pins {
     width: 16%;
     height:4px;
-    background-color: #020e1c;
+    background-color: var(--main-color);
     margin: auto;
     border-radius: 8px;
 }
@@ -212,12 +220,12 @@ h2 {
     border-left: 4px solid rgba(75, 192, 192, 1.00);
 }
 .title-report h3,h5{
-    color:white;
+    color:var(--titles);
     text-align:left;
     margin:0px;
 }
     .title-report p {
-        color: #abaeb3;
+        color: var(--gray);
         text-align: left;
         margin: 0px;
     }
@@ -227,7 +235,7 @@ h2 {
 }
     .description p {
         width:auto;
-        color: #abaeb3;
+        color: var(--gray);
         text-align: left;
         margin: 0px;
     }
@@ -263,11 +271,9 @@ h2 {
 
 /*End Reports box*/
 /*End section Reports*/
-/*.mobile-m div {
-    margin: auto;
-}*/
+
 .isntpay {
-    color: #abaeb3;
+    color: var(--gray);
     position: absolute;
     right: 24px;
     top: 16px;
@@ -307,7 +313,7 @@ h2 {
             }
        
         .profile-pic div i {
-            color: #abaeb3;
+            color: var(--gray);
             font-size: 22pt;
             margin-top: -62px;
             opacity:1 !important;
@@ -338,6 +344,9 @@ h2 {
     }
 }
 @media(max-width:575px) {
+    .mobile-m div {
+        margin: auto;
+    }
     .filter-reports {
         margin: auto;
         text-align: center;
@@ -352,7 +361,7 @@ h2 {
     }
     #Finance-menu{
         margin-top:0px;
-        background-color:#151e2b;
+        background-color:var(--bg-items-color);
         bottom:0px ;
         top:unset;
         height:50px;
@@ -387,14 +396,14 @@ h2 {
             /*border:1px solid blue;*/
         }
     .nav-bottem div i{
-        color:#abaeb3;
+        color:var(--gray);
         display:contents;
         font-size:18pt;
     }
     .diamond {
         width: 45px !important;
         height: 45px !important;
-        background-color: #abaeb3;
+        background-color: var(--gray);
         transform: rotate(45deg);
         /*position:absolute !important;*/
         /*bottom:18px ;*/
@@ -402,7 +411,7 @@ h2 {
         margin-top:-57px !important;
         /*border-bottom:10px solid #020e1c;
         border-right:10px solid #020e1c;*/
-        box-shadow:5px 5px 1px #020e1c;
+        box-shadow:5px 5px 1px var(--main-color);
        
     }
         .diamond p {
@@ -411,12 +420,12 @@ h2 {
             transform: rotate(46deg) !important;
         }
         .diamond:hover {
-            box-shadow: 6px 6px 4px #020e1c;
+            box-shadow: 6px 6px 4px var(--main-color);
             cursor:pointer;
         }
         .diamond p i {
             font-size: 22pt;
-            color: #151e2b;
+            color: var(--bg-items-color);
         }
 }
 
@@ -431,4 +440,6 @@ h2 {
     .nav-bottem{
         display:none;
     }
+    
+    
 }
