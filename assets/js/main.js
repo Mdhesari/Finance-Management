@@ -1,15 +1,3 @@
-jQuery(document).ready(function ($) {
-	clicksEvent();
-
-	function clicksEvent() {
-		$("income-btn").on("click", function () {
-			$("this").toggleClass("active");
-		});
-		$("expense-btn").on("click", function () {
-			$("this").toggleClass("active");
-		});
-	}
-});
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
