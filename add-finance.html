@@ -12,8 +12,9 @@
 
     <!--Jquery -->
     <script src="assets/js/jquery.slim.min.js" type="text/javascript"></script>
-   
+
     <!--Jquery -->
+    <script src="https://kit.fontawesome.com/de1219be64.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                 <div class="add-content">
                     <form action="" class="form-holder Date">
                         <div class="row row-form-holder">
-                            <div class="col-lg-5 col-md-12 form-inpus">
+                            <div class="col-lg-4 col-md-12 form-inputs">
                                 <div class="form-input col-md-12">
                                     <div class="input-title">
                                         <span>Title</span>
@@ -65,16 +66,20 @@
                                     <input type="number" class="finance-input">
                                 </div>
                                 <div class="form-input col-md-12">
-                                    <div class="row">
-                                        <div class=" col-md-6 btn-holder ">
-                                            <button class="btn btn-peyment income-btn" id="income-btn">
-                                                Income
-                                            </button>
+                                    <div class="row peyments">
+                                        <div class="col-md-6 ">
+                                            <div class="inner-payment">
+                                                <input type="radio" id="income" class="peyment-input income-input"
+                                                    name="pey">
+                                                <label for="income" class="peyment-lable income">Income</label>
+                                            </div>
                                         </div>
-                                        <div class=" col-md-6 btn-holder ">
-                                            <button class="btn btn-peyment expense-btn">
-                                                Expense
-                                            </button>
+                                        <div class=" col-md-6">
+                                            <div class="inner-payment">
+                                                <input type="radio" id="expense" class="peyment-input expense-input"
+                                                    name="pey" value="" checked>
+                                                <label for="expense" class="peyment-lable expense">Expense</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -82,30 +87,44 @@
                             <div class="col-lg-4 .col-md-12 form-inputs">
                                 <div class="form-input col-md-12">
                                     <div class="input-title">
-                                        <span>Category</span>
-                                    </div>
-                                    <select class="browser-default custom-select">
-                                        <option value="1">Personal</option>
-                                        <option value="2">Work</option>
-                                        <option value="3">Home</option>
-                                    </select>
-                                </div>
-                                <div class="form-input col-md-12">
-                                    <div class="input-title">
                                         <span>Description</span>
                                     </div>
                                     <textarea name="" id="" cols="30" rows="10"></textarea>
                                 </div>
+                                <div class="form-input col-md-12">
+                                    <div class="input-title">
+                                        <span>Category</span>
+                                    </div>
+                                    <!-- <select class="browser-default custom-select">
+                                        <option value="1">Personal</option>
+                                        <option value="2">Work</option>
+                                        <option value="3">Home</option>
+                                    </select> -->
+                                    <div class="category-holder">
+                                        <div class="btn-category">
+                                            <button class="btn add-btn"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                        <ul class="categories">
+                                            <li class="category">
+                                                Car
+                                            </li>
+                                            <li class="category">
+                                                Cinema
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-lg-3 .col-md-12 form-inputs">
+                            <div class="col-lg-4 .col-md-12 form-inputs">
                                 <div class="form-input col-md-12">
                                     <div class="input-title">
                                         <span>Date</span>
                                     </div>
-                                        <input type="text" id="datepicker" value="Date:" class="finance-input" />
-                                    </div>
+                                    <input type="text" id="datepicker" value="Date:" class="finance-input" />
                                 </div>
                             </div>
+                        </div>
                         <div class="row-form-holder row-form-button">
                             <button class="btn btn-submit" type="submit"> Submit</button>
                         </div>
@@ -137,9 +156,9 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-          $(function () {
-              $("#datepicker").datepicker();
-          });
+        $(function () {
+            $("#datepicker").datepicker();
+        });
     </script>
 </body>
 
