@@ -323,6 +323,21 @@ h2 {
     display:block;
 }
 /*End profile-section*/
+/*Start Single partition*/
+.tags{
+    list-style:none;
+    padding:8px;
+}
+.tags li{
+    background-color:rgb(17, 128, 128);
+    color:white;
+    border-radius:30px;
+    text-align:center;
+    padding:8px 16px;
+    display:inline-block;
+    cursor:pointer;
+}
+/*End Single partition*/
 /*Mobile Responsive Finance*/
 @media(max-width:991px) and (min-width:767px) {
     #DoughnutChart {
@@ -400,6 +415,26 @@ h2 {
         display:contents;
         font-size:18pt;
     }
+    /*.diamond-container {
+        width: 45px !important;
+        height: 45px !important;
+        background: none;
+        transform: rotate(45deg);
+      
+        border-radius: 4px;
+        margin-top: -30px !important;
+        box-shadow: 15px 15px 1px var(--main-color);
+        position: relative !important;
+    }
+
+    .diamond {
+        width: 45px !important;
+        height: 45px !important;
+        background-color: var(--gray);
+        border-radius: 4px;
+        margin-top: 0px !important;
+     
+    }*/
     .diamond {
         width: 45px !important;
         height: 45px !important;
