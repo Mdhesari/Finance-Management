@@ -29,7 +29,7 @@ h2 {
     margin: 12px 0px;
 }
 
-    .profile-btn div {
+    .profile-btn p {
         width: 40px;
         height: 40px;
         border-radius: 20px;
@@ -40,14 +40,68 @@ h2 {
         display: inline-block;
     }
 
-        .profile-btn div i {
+        .profile-btn p i {
             color:var(--gray) ;
         }
 /*End Menu-Finance*/
-/*Start Chart section css*/
-.chart{
-    padding:12px;
+/*start profile-dropdown*/
+    .profile-btn {
+        text-align:right;
+    }
+
+.profile-dropdown {
+    background-color: var( --gray);
+    height: auto;
+    width: auto;
+    margin-top: -10px;
+    display:none;
 }
+    .profile-dropdown div {
+        background-color:var(--bg-items-color);
+        height:auto;
+        text-align:left;
+        padding:16px;
+    }
+        .profile-dropdown div img{
+            width:50px;
+            height:50px;
+            border-radius:25px;
+            display:inline-block;
+        }
+        .profile-dropdown div h3{
+            color:var(--gray);
+            font-size:12pt;
+            display:inline-block;
+            margin:4px;
+        }
+    .profile-dropdown ul{
+        list-style:none;
+        padding:8px 0px;
+        text-align:left;
+    }
+        .profile-dropdown ul li {
+            font-size: 13pt;
+            cursor: pointer;
+            color: var(--main-color);
+            padding:8px 16px;
+        }
+            .profile-dropdown ul li:hover {
+                background-color: var(--bg-items-color);
+            }
+            .profile-dropdown ul li:hover a{
+                color:var(--gray);
+            } .profile-dropdown ul li a {
+                color: var(--main-color);
+                text-decoration: none;
+            } 
+            .profile-dropdown ul li i {
+                margin-right: 8px;
+            }
+            /*End profile-dropdown*/
+            /*Start Chart section css*/
+            .chart {
+                padding: 12px;
+            }
 .Chart-partition {
     /*background-color: #17202d;*/
     background-color: var(--bg-items-color);
