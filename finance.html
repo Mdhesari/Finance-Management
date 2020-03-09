@@ -53,14 +53,23 @@
             <div><a href="#"><i class="fas fa-user-alt fa-2x"></i></a></div>
           </div>
         </nav>
-        <div class="profile-btn">
-          <p>
-            <i class="fas fa-user-alt"></i>
-          </p>
-          <p>
-            <i class="fas fa-sign-out-alt"></i>
-          </p>
-        </div>
+          <div class="profile-btn">
+              <p>
+                  <i class="fas fa-user-alt"></i>
+              </p>
+              <div class="profile-dropdown">
+                  <div>
+                      <img src="assets/img/profile.png" />
+                      <h3>@the-hossein</h3>
+
+                  </div>
+                  <ul>
+                      <li><a href="#"><i class="fas fa-cog"></i>Setting Profile</a></li>
+                      <li><a href="#"><i class="fas fa-bell"></i>Notification</a></li>
+                      <li><a href="#"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+                  </ul>
+              </div>
+          </div>
       </div>
     </header>
     <main class="mb-5">
@@ -124,7 +133,7 @@
               <h2>Last Recorder</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row relative">
             <ul class="filter-reports">
               <li class="filter-active"><a>All</a></li>
               <li><a>Income</a></li>
@@ -145,6 +154,9 @@
                 </form>
               </li>
             </ul>
+              <div class=" add-reports">
+                  <i class="fas fa-plus fa-2x"></i>
+              </div>
           </div>
           <div class="row mt-4 mb-3 mobile-m">
             <div
@@ -286,5 +298,13 @@
         $("#datepicker").datepicker();
       });
     </script>
+      <script>
+           $(document).ready(function () {
+               $(".profile-btn p").click(function () {
+                   $(".profile-dropdown").slideToggle();
+               });
+          });
+          
+      </script>
   </body>
 </html>

@@ -3,6 +3,7 @@
     --titles: #f5f6f8;
     --bg-items-color: #151e2b;
     --gray: #abaeb3;
+    --main-light: #16273b;
 }
 /*Start page css*/
 body {
@@ -21,7 +22,9 @@ h2 {
 .page-title{
     padding:8px;
 }
-
+.relative{
+    position:relative;
+}
 /*End page css*/
 /*Start Menu-Finance*/
 .profile-btn {
@@ -47,20 +50,29 @@ h2 {
 /*start profile-dropdown*/
     .profile-btn {
         text-align:right;
+        position:relative;
     }
 
 .profile-dropdown {
-    background-color: var( --gray);
+    background-color: var( --bg-items-color);
     height: auto;
-    width: auto;
+    width: 200px;
     margin-top: -10px;
-    display:none;
+    display: none;
+    border-radius: 8px;
+    overflow: hidden;
+    position:absolute;
+    right:1px;
+    z-index:99;
+   box-shadow:-4px 4px 9px var(--main-color);
 }
     .profile-dropdown div {
         background-color:var(--bg-items-color);
         height:auto;
         text-align:left;
         padding:16px;
+        border-bottom:2px solid var(--main-color);
+      
     }
         .profile-dropdown div img{
             width:50px;
@@ -82,16 +94,16 @@ h2 {
         .profile-dropdown ul li {
             font-size: 13pt;
             cursor: pointer;
-            color: var(--main-color);
+            color: var(--gray);
             padding:8px 16px;
         }
             .profile-dropdown ul li:hover {
-                background-color: var(--bg-items-color);
+                background-color: var(--main-color);
             }
             .profile-dropdown ul li:hover a{
                 color:var(--gray);
             } .profile-dropdown ul li a {
-                color: var(--main-color);
+                color: var(--gray);
                 text-decoration: none;
             } 
             .profile-dropdown ul li i {
@@ -322,16 +334,36 @@ h2 {
             .finance-reports div:last-child div:hover i {
                 color: #18032e;
             }
-
-/*End Reports box*/
-/*End section Reports*/
-
-.isntpay {
-    color: var(--gray);
-    position: absolute;
-    right: 24px;
-    top: 16px;
+.add-reports{
+    width:40px;
+    height:40px;
+    position:absolute;
+    right:14px;
+    text-align:center;
+    padding:10px;
+    border-radius:20px;
+    background-color:var(--main-light);
 }
+    .add-reports i{
+        font-size:15pt;
+        color:var(--gray);
+    }
+    .add-reports:hover{
+        background-color:var(--gray);
+        border:none;
+        cursor:pointer;
+    }
+        .add-reports:hover i{
+            color:var(--bg-items-color);
+        }
+        /*End Reports box*/
+        /*End section Reports*/
+        .isntpay {
+            color: var(--gray);
+            position: absolute;
+            right: 24px;
+            top: 16px;
+        }
 /*Start profile-section*/
 .profile-section {
     /*background-color: #16273b;*/
@@ -413,7 +445,9 @@ h2 {
     }
 }
 @media(max-width:575px) {
-    .mobile-m div {
+    .add-reports{
+        display:none;
+    } .mobile-m div {
         margin: auto;
     }
     .filter-reports {
