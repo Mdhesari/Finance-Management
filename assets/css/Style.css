@@ -7,7 +7,8 @@
 }
 /*Start page css*/
 body {
-   
+    position: relative;
+    height: 100%;
     /*background-color: #212429;*/
     background-color: var(--main-color);
     overflow-x: hidden;
@@ -15,6 +16,16 @@ body {
 h2 {
     /*color: #f5f6f8;*/
     color:var(--titles);
+}
+.backcover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 98;
 }
 .auto{
     margin:auto;
@@ -261,15 +272,16 @@ h2 {
 /*Start Reports box*/
 .finance-reports {
     background-color: var(--bg-items-color);
-    height: auto;
+    height: 190px;
     border-radius: 24px;
-    padding: 16px;
+    padding: 8px 16px 0px;
 }
-   
-
+#single-section .finance-reports{
+height:auto;
+} 
 .pins {
     width: 16%;
-    height:4px;
+    height: 4px;
     background-color: var(--main-color);
     margin: auto;
     border-radius: 8px;
@@ -289,11 +301,16 @@ h2 {
     color:var(--titles);
     text-align:left;
     margin:0px;
+    font-size:17pt;
+}
+.title-report h5{
+    font-size:14pt;
 }
     .title-report p {
         color: var(--gray);
         text-align: left;
         margin: 0px;
+        
     }
 .description {
     margin: 4px auto;
