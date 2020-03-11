@@ -53,14 +53,23 @@
             <div><i class="fas fa-user-alt fa-2x"></i></div>
           </div>
         </nav>
-        <div class="profile-btn">
-          <p>
-            <i class="fas fa-user-alt"></i>
-          </p>
-          <p>
-            <i class="fas fa-sign-out-alt"></i>
-          </p>
-        </div>
+          <div class="profile-btn">
+              <p>
+                  <i class="fas fa-user-alt"></i>
+              </p>
+              <div class="profile-dropdown">
+                  <div>
+                      <img src="assets/img/profile.png" />
+                      <h3>@the-hossein</h3>
+
+                  </div>
+                  <ul>
+                      <li><a href="#"><i class="fas fa-cog"></i>Setting Profile</a></li>
+                      <li><a href="#"><i class="fas fa-bell"></i>Notification</a></li>
+                      <li><a href="#"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+                  </ul>
+              </div>
+          </div>
       </div>
     </header>
     <main class="mb-5">
@@ -151,5 +160,16 @@
         </div>
       </section>
     </main>
+      <!--Jquery -->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script>
+          $(document).ready(function () {
+              $(".profile-btn p").click(function () {
+                  $(".profile-dropdown").slideToggle();
+              });
+
+          });
+      </script>
+
   </body>
 </html>
