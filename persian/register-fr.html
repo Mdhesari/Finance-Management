@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/stylefr.css">
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.min.css" rel="stylesheet" />
+    <!--Jquery -->
+    <script src="/assets/js/jquery.slim.min.js" type="text/javascript"></script>
+    <!--Jquery -->
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://kit.fontawesome.com/de1219be64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="Finance-menu" class="top-header">
+        <div class="container">
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="assets/img/logo.png" alt="" />
+                </a>
+            </div>
+            <nav class="main-menu" id="main-menu">
+                <ul>
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">پشتیبانی</a></li>
+                </ul>
+                <div class="row nav-bottem">
+                    <div><a href="#"><i class="fas fa-home fa-2x"></i></a></div>
+                    <div><a href="#"><i class="fas fa-question"></i></a></div>
+                    <div class="diamond-container">
+                        <div class="diamond">
+                            <p>
+                                <a href="#">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </a>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div><a href=""><i class="fas fa-bell"></i></a></div>
+                    <div><a href="#"><i class="fas fa-user-alt fa-2x"></i></a></div>
+                </div>
+            </nav>
+            <div class="profile-btn">
+                <p>
+                    <i class="fas fa-user-alt"></i>
+                </p>
+                <div class="profile-dropdown">
+                    <div>
+                        <img src="assets/img/profile.png" />
+                        <h3>@the-hossein</h3>
+
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-cog"></i>تنظیمات کاربری</a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i>پیام</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i>خروج</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="register-sec">
+            <div class="container-register" id="container">
+                <div class="form-container sign-up-container sign-res">
+                    <form action="#" class="form-register form-res">
+                        <h1>ساخت حساب کاربری</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <input type="text" placeholder="نام و نام خانوادگی" />
+                        <input type="email" placeholder="ایمیل" />
+                        <input type="password" placeholder="رمز عبور" />
+                        <button class="register-btn">ثبت نام</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container" id="form_sign">
+                    <form action="#" class="form-register">
+                        <h1>ورود</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <input type="email" placeholder="ایمیل" />
+                        <input type="password" placeholder="رمز عبور" />
+                        <div class="bottom-holder">
+                            <a href="#">آیا رمز خود را فراموش کردید؟</a>
+                            <a href="#" onclick="sign_up()" class="sign-up-btn"> ثبت نام</a>
+                        </div>
+                        <button class="register-btn">ورود</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>خوش آمدید</h1>
+                            <p>.برای ارتباط با ما ، لطفاً با اطلاعات شخصی خود وارد شوید</p>
+                            <button class="register-btn" id="signIn">ورود</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>سلام ، رفیق</h1>
+                            <p>.اطلاعات شخصی خود را وارد کنید و با ما سفر کنید</p>
+                            <button class="register-btn" id="signUp">ثبت نام</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal-sec">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row footer-infos">
+                <div class="col-12 col-md-6 footer-info">
+                    <div class="copy-right-holder">
+                        © 2020 by Nimckat . All Rights Reserved.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 footer-info">
+                    <div class="info-us-holder">
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--Main JS-->
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/finance.js" type="text/javascript"></script>
+    <!--Main JS-->
+</body>
+</html>

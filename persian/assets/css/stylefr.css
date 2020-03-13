@@ -406,6 +406,7 @@ section.sec {
     margin: 8px 0;
     width: 100%;
     border-radius: 8px;
+    direction: rtl;
 }
 
 .container-register {
@@ -757,7 +758,7 @@ input#checkBox+label {
 }
 
 input#checkBox:checked+label {
-    left: 34px;
+    right: 34px;
 }
 
 input#checkBox:checked+label+div#checking {
@@ -766,7 +767,8 @@ input#checkBox:checked+label+div#checking {
 
 .is-paid {
     position: relative;
-    top: -8px;
+    top: -12px;
+    right: 4px;
 }
 
 /* Add Finance */
