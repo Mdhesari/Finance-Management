@@ -1123,7 +1123,7 @@ input#checkBox:checked+label+div#checking {
     background-color: var(--bg-items-color);
     height: 190px;
     border-radius: 24px;
-    padding: 8px 16px 0px;
+    padding: 24px;
 }
 
 #single-section .finance-reports {
