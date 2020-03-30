@@ -716,7 +716,7 @@ section.sec {
 }
 
 #checking {
-    background: #aaa;
+    background: #1e334c;
     border-radius: 25px;
     height: 30px;
     width: 50px;
@@ -738,7 +738,6 @@ input#checkBox+label {
     border-radius: 25px;
     height: 30px;
     width: 30px;
-    box-shadow: 0px 0px 5px 0.1px #000;
     -webkit-transition: left 0.5s;
     -moz-transition: left 0.5s;
     transition: left 0.5s;
