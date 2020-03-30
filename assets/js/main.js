@@ -12,8 +12,10 @@ function sign_up() {
 
 function enterSignUp() {
   container.classList.add("right-panel-active");
+  document.getElementById("sign_up_btn").style.cssText="display:none";
 }
 
 function enterSignIn() {
   container.classList.remove("right-panel-active");
+  document.getElementById("sign_up_btn").style.cssText="display:block";
 }

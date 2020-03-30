@@ -34,17 +34,12 @@
                 <a href="#" class="sign-in">
                     Sign In
                 </a>
-                <a href="#" class="sign-up active">
-                    Sign Up
-                </a>
             </div>
         </div>
     </header>
     <main>
         <section class="register-sec">
-
             <div class="container-register" id="container">
-
                 <div class="form-container sign-up-container sign-res">
                     <form action="#" class="form-register form-res">
                         <h1>Create Account</h1>
@@ -56,59 +51,45 @@
                         <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
-
                         <button class="register-btn">Sign Up</button>
-                        <button class="btn btn-link text-secondary" onclick="enterSignIn()">Already have an account?
-                            Sign in</button>
-
+                        <!-- <button class="btn btn-link text-secondary" onclick="enterSignIn()">Already have an account?
+                            Sign in</button> -->
                     </form>
                 </div>
                 <div class="form-container sign-in-container" id="form_sign">
                     <form action="#" class="form-register">
                         <h1>Sign in</h1>
-
                         <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
-
                         <div class="bottom-holder">
                             <a href="#">Forgot your password?</a>
                             <a href="#" onclick="sign_up()" class="sign-up-btn"> Sign Up</a>
                         </div>
-
                         <button class="register-btn">Sign In</button>
-                        <button class="btn btn-link text-secondary" onclick="enterSignUp()">Does not have any account?
-                            Sign up</button>
-
                     </form>
                 </div>
-
                 <div class="overlay-container">
-
                     <div class="overlay">
-
                         <div class="overlay-panel overlay-left">
                             <h1>Welcome Back!</h1>
                             <p>To keep connected with us please login with your personal info</p>
                             <button class="register-btn" id="signIn">Sign In</button>
                         </div>
-
                         <div class="overlay-panel overlay-right">
                             <h1>Hello, Friend!</h1>
                             <p>Enter your personal details and start journey with us</p>
                             <button class="register-btn" id="signUp">Sign Up</button>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
+            <button class="btn btn-link text-secondary" onclick="enterSignUp()" id="sign_up_btn">Does not have any account? Sign up</button>
+            <!-- <button class="btn btn-link text-secondary" onclick="enterSignIn()" id="sign-in-btn">Already have an account? Sign in</button> -->
         </section>
     </main>
     <footer class="main-footer">
