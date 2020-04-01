@@ -679,6 +679,9 @@ section.sec {
 
 .inner-payment {
   position: relative;
+  display: inline-block;
+  width: 40%;
+  margin-right: 16px;
 }
 
 .inner-payment .peyment-input {
@@ -702,6 +705,7 @@ section.sec {
   text-align: center;
   font-size: 16px;
   padding: 8px;
+  display: inline-block;
 }
 
 .income-input:checked+.income {
@@ -1332,6 +1336,10 @@ h5 {
 /*START Queries*/
 @media (max-width: 768px) {
 
+  /* #sign-in-btn{
+    display: block !important;
+  } */
+
 
   .container-register.right-panel-active .form-container {
     transform: translateY(0);
@@ -1585,5 +1593,5 @@ h5 {
 
 /*START Queries*/
 #sign-in-btn{
-  display: none;
+  display: none  ;
 }
