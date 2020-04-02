@@ -38,6 +38,11 @@ img {
   max-width: 100%;
 }
 
+#app-main {
+
+  margin-bottom:8em;
+}
+
 .bg-introduction {
   background: transparent url("../img/finance.png") no-repeat 76% 90%;
   background-size: 30em;
@@ -86,7 +91,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 12;
+  z-index: 99;
 }
 
 .top-header .logo-holder {
@@ -1517,7 +1522,7 @@ h5 {
     display: none;
   }
 
-  #Finance-menu .main-menu ul {
+  #Finance-menu .main-menu ul.desktop-menu {
     display: none;
   }
 
