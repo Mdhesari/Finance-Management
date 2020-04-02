@@ -34,6 +34,15 @@ ul li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+.bg-introduction {
+  background: transparent url("../img/finance.png") no-repeat 76% 90%;
+  background-size: 30em;
+}
+
 .text-left {
   text-align: left;
 }
@@ -130,7 +139,7 @@ h2 {
   color: #fff;
 }
 
-.top-header .main-menu ul>li:hover>a {
+.top-header .main-menu ul > li:hover > a {
   background-color: #1945c2;
 }
 
@@ -440,7 +449,6 @@ section.sec {
 }
 
 @keyframes show {
-
   0%,
   49.99% {
     opacity: 0;
@@ -537,7 +545,7 @@ section.sec {
 .sign-up-btn {
   display: none;
 }
-.btn-link  {
+.btn-link {
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -587,7 +595,8 @@ section.sec {
   margin-bottom: 8px;
 }
 
-.form-input .input-title span {}
+.form-input .input-title span {
+}
 
 .form-input textarea {
   width: 100%;
@@ -708,11 +717,11 @@ section.sec {
   display: inline-block;
 }
 
-.income-input:checked+.income {
+.income-input:checked + .income {
   background-color: #2ecc71 !important;
 }
 
-.expense-input:checked+.expense {
+.expense-input:checked + .expense {
   background-color: #c2185b !important;
 }
 
@@ -753,8 +762,7 @@ input#checkBox {
   display: none;
 }
 
-
-input#checkBox+label {
+input#checkBox + label {
   display: block;
   position: absolute;
   background: #fff;
@@ -766,7 +774,7 @@ input#checkBox+label {
   transition: left 0.5s;
 }
 
-input#checkBox+label {
+input#checkBox + label {
   display: block;
   position: absolute;
   background: #fff;
@@ -778,11 +786,11 @@ input#checkBox+label {
   transition: left 0.5s;
 }
 
-input#checkBox:checked+label {
+input#checkBox:checked + label {
   left: 34px;
 }
 
-input#checkBox:checked+label+div#checking {
+input#checkBox:checked + label + div#checking {
   background-color: #4bd865;
 }
 
@@ -1221,8 +1229,6 @@ h5 {
   color: #c38dff;
 }
 
-.finance-reports div:last-child div h4 {}
-
 .finance-reports div:last-child div:hover {
   background-color: #c086fe;
 }
@@ -1334,12 +1340,17 @@ h5 {
 
 /*End Single partition*/
 /*START Queries*/
-@media (max-width: 768px) {
 
+@media (min-width: 768px) {
+  .introduction .sub-des {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
   /* #sign-in-btn{
     display: block !important;
   } */
-
 
   .container-register.right-panel-active .form-container {
     transform: translateY(0);
@@ -1361,16 +1372,16 @@ h5 {
     text-align: center;
   }
 
-  .introduction .des-us p {
-    text-align: center;
-  }
-
   .introduction .btn-holder {
     text-align: center;
   }
 
   .introduction .vector {
     display: none;
+  }
+
+  .bg-introduction {
+    background: none !important;
   }
 
   .finance .inner {
@@ -1452,7 +1463,7 @@ h5 {
   .forgot-form-holder {
     padding: 96px 0 !important;
   }
-  .register-sec .btn-link{
+  .register-sec .btn-link {
     display: block;
   }
 }
@@ -1580,6 +1591,10 @@ h5 {
 }
 
 @media (max-width: 991px) {
+  .bg-introduction {
+    background: transparent url("../img/finance.png") no-repeat 90% 55%;
+    background-size: 26em;
+  }
   .chart:last-child div {
     height: auto;
   }
@@ -1592,6 +1607,6 @@ h5 {
 }
 
 /*START Queries*/
-#sign-in-btn{
-  display: none  ;
+#sign-in-btn {
+  display: none;
 }
