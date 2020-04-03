@@ -39,8 +39,7 @@ img {
 }
 
 #app-main {
-
-  margin-bottom:8em;
+  margin-bottom: 8em;
 }
 
 .bg-introduction {
@@ -200,6 +199,12 @@ section.sec {
   outline: 0;
   margin-top: 48px;
   padding: 8px 24px;
+}
+
+.finance-action-holder {
+  position: absolute;
+  right: 7%;
+  bottom: 3%;
 }
 
 .finance .inner {
@@ -1162,6 +1167,10 @@ input#checkBox:checked + label + div#checking {
   padding: 8px 16px;
 }
 
+.title-report > * {
+  padding: 0.5em 0;
+}
+
 .expense-border {
   border-left: 4px solid #d84c3b;
 }
@@ -1200,7 +1209,7 @@ h5 {
   margin: 0px;
 }
 
-.finance-reports div:last-child {
+.finance-reports .finance-action-holder {
   width: 100%;
   margin: 4px;
   padding: 8px;
@@ -1208,7 +1217,8 @@ h5 {
   direction: rtl;
 }
 
-.finance-reports div:last-child div {
+.finance-reports div.finance-action-holder a {
+  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -1218,15 +1228,15 @@ h5 {
   padding-top: 8px;
 }
 
-.finance-reports div:last-child div i {
+.finance-reports div.finance-action-holder i {
   color: #c38dff;
 }
 
-.finance-reports div:last-child div:hover {
+.finance-reports div.finance-action-holder a:hover {
   background-color: #c086fe;
 }
 
-.finance-reports div:last-child div:hover i {
+.finance-reports div.finance-action-holder a:hover i {
   color: #18032e;
 }
 
