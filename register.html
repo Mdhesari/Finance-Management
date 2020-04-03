@@ -31,10 +31,10 @@
                 </ul>
             </nav>
             <div class="actions">
-                <a href="#" class="sign-in">
+                <a href="/register?signin=true" class="sign-in">
                     Sign In
                 </a>
-                <a href="#" class="sign-up active">
+                <a href="/register?signup=true" class="sign-up active">
                     Sign Up
                 </a>
             </div>
@@ -69,11 +69,10 @@
                         </div>
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
-                        <div class="bottom-holder">
-                            <a href="#">Forgot your password?</a>
-                            <a href="#" onclick="sign_up()" class="sign-up-btn"> Sign Up</a>
-                        </div>
                         <button class="register-btn">Sign In</button>
+                        <div class="bottom-holder mt-3">
+                            <a href="#" class="text-info">Forgot your password?</a>
+                        </div>
                     </form>
                 </div>
                 <div class="overlay-container">
@@ -91,10 +90,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="btn btn-link text-secondary" onclick="enterSignUp()" id="sign_up_btn">Does not have any
-                account? Sign up</button>
-            <button class="btn btn-link text-secondary" onclick="enterSignIn()" id="sign-in-btn">Already have an
-                account? Sign in</button> -->
+            <button class="btn btn-link text-secondary" onclick="enterSignUpOrSignIn()" id="register-action">
+                Does not have any account?
+            </button>
         </section>
     </main>
     <footer class="main-footer">
