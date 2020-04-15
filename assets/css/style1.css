@@ -165,7 +165,7 @@ h2 {
 /* Header */
 /* Main */
 section.sec {
-  padding: 96px 0;
+  padding-top: 80px;
 }
 
 .introduction .des-us {
@@ -1342,6 +1342,64 @@ h5 {
 }
 
 /*End Single partition*/
+/* Contact-US */
+section.secr{
+  padding: 96px 0 ;
+}
+.contact-us-holder .vector{
+  width: 600px;
+  text-align: left;
+}
+.contact-us-holder .vector img{
+  width: 100%;
+}
+.contact-us-row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-us-message{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+.contact-us-message .heading{
+    margin: 16px 0;
+}
+.contact-us-message .heading h1{
+    color: #444444;
+    font-size: 30px;
+}
+.contact-us-message .input-holder{
+  margin-bottom: 24px;
+}
+.contact-us-message .input-holder input{
+  border: 0;
+  border-bottom: 1px solid #eee;
+  padding: 6px;
+  width: 100%;
+  outline: 0;
+}
+.contact-us-message .input-holder textarea{height: 200px;width: 100%;border: 1px solid #eee;}
+.contact-us-message .input-holder textarea::placeholder{
+  color: #bfbfbf;
+}
+.contect-btn{
+text-align: center;
+}
+.contect-btn .submit-contact{
+ width: 80%;
+ color: #fff;
+ background-color: #ff3d8b;
+ padding: 8px;
+ border-radius: 25px;
+border: 0;
+outline: 0;
+}
+/* Contact-US */
+/* Contact-US */
 /*START Queries*/
 
 @media (min-width: 768px) {
@@ -1354,6 +1412,9 @@ h5 {
   /* #sign-in-btn{
     display: block !important;
   } */
+  .contact-us-holder .vector{
+    display: none;
+  } 
 
   .container-register.right-panel-active .form-container {
     transform: translateY(0);
